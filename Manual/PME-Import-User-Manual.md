@@ -2,7 +2,7 @@
 
 ## User Manual
 
-**Extension:** CMsoft Import for PAC Machine Edition (`MariuszCzyrnek.emerson-import`) · **Version described:** 1.2.1 · **Date:** October 2026  
+**Extension:** CMsoft Import for PAC Machine Edition (`MariuszCzyrnek.emerson-import`) · **Version described:** 1.3.0 · **Date:** October 2026  
 **Vendor:** CMsoft · [shop.cmsoft.com.pl](https://shop.cmsoft.com.pl) · [office@cmsoft.com.pl](mailto:office@cmsoft.com.pl) · [questions and problem reports](https://github.com/cmariusz/EmersonImport.VSExt/issues)
 
 ![Architecture overview](images/01-architecture.png)
@@ -11,7 +11,7 @@ This manual shows how to install the extension, what PAC Machine Edition needs f
 
 All screenshots were taken with VS Code 1.143 (dark theme) and PAC Machine Edition 10.7 on Windows 11, against a small demo project called **ZZ_CMsoft_ManualDemo** (one PACSystems RX3i target named `Target1`). Numbered red callouts in the pictures are explained in the text below each picture. Private values (license e-mail, license ID, hardware ID, session tokens, the names of other projects in the PAC Machine Edition project store) are hidden by hatched boxes. The chat answers in chapter 11 were written by a scripted stand-in model, because the screenshots were made in a VS Code without a Copilot subscription; the tool calls, the confirmations and the results in those pictures are real (section 11.1).
 
-> **Which version is this?** The manual describes CMsoft Import for PAC Machine Edition **1.2.1**. If the version you installed is older (Extensions view → CMsoft Import for PAC Machine Edition → version number), some commands, messages or settings described here may not exist in it. Update the extension first.
+> **Which version is this?** The manual describes CMsoft Import for PAC Machine Edition **1.3.0**. If the version you installed is older (Extensions view → CMsoft Import for PAC Machine Edition → version number), some commands, messages or settings described here may not exist in it. Update the extension first.
 
 ## Contents
 
@@ -413,7 +413,7 @@ and **CHANGELOG** tabs. Before the installation **Install** is also available th
 **Disable** and **Uninstall**; before the installation the page shows **Install** at that place. The identifier of the extension is
 `MariuszCzyrnek.emerson-import`.*
 
-> **Version note.** The Marketplace may show a version that is older than the one this manual describes (1.2.1). The
+> **Version note.** The Marketplace may show a version that is older than the one this manual describes (1.3.0). The
 > **CHANGELOG** tab lists what each version added. If you need a build that is not on the Marketplace yet, install the VSIX file you
 > received from the vendor (next section).
 
@@ -441,13 +441,13 @@ Use this for computers without internet access, for builds sent to you by the ve
 code --install-extension MariuszCzyrnek.emerson-import
 
 # from a file
-code --install-extension C:\Downloads\emerson-import-1.2.1.vsix
+code --install-extension C:\Downloads\emerson-import-1.3.0.vsix
 
 # check what is installed
 code --list-extensions --show-versions
 ```
 
-The last command lists `mariuszczyrnek.emerson-import@1.2.1` among the installed extensions (VS Code prints the identifier in
+The last command lists `mariuszczyrnek.emerson-import@1.3.0` among the installed extensions (VS Code prints the identifier in
 lower case).
 
 ### 3.5 What you see after the installation
@@ -2397,7 +2397,7 @@ The answer to `initialize` names the server and its version:
 
 ```json
 { "result": { "protocolVersion": "2025-06-18", "capabilities": { "tools": {} },
-              "serverInfo": { "name": "emerson-import", "version": "1.2.1" } }, "jsonrpc": "2.0", "id": 1 }
+              "serverInfo": { "name": "emerson-import", "version": "1.3.0" } }, "jsonrpc": "2.0", "id": 1 }
 ```
 
 A tool call and its result — every tool answers with **one text item that holds a JSON document**; parse it as the examples do:

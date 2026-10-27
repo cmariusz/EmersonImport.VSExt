@@ -3,7 +3,7 @@
 🌐 **[www.cmsoft.com.pl](https://www.cmsoft.com.pl)** — all CMsoft extensions, the shop and contact
 
 <!-- VERSION-BADGE -->
-[![Version](https://img.shields.io/badge/version-1.2.1-blue)](https://marketplace.visualstudio.com/items?itemName=MariuszCzyrnek.emerson-import)
+[![Version](https://img.shields.io/badge/version-1.3.0-blue)](https://marketplace.visualstudio.com/items?itemName=MariuszCzyrnek.emerson-import)
 <!-- /VERSION-BADGE -->
 
 Import Emerson PAC Machine Edition projects into VS Code as PLCopen XML and Structured Text, edit them and export them back to PME - with Copilot tools, a chat assistant and an MCP server.
